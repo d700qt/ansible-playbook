@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+    - name: get hostname
+      command: hostname
+      register: hostname
+
+    - name: debug
+      ansible.builtin.debug:
+        var: hostname

@@ -1,0 +1,2 @@
+---
+- import_playbook: site.d/playbook1.yml
