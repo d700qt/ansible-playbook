@@ -10,4 +10,4 @@
       yum:
         name: /tmp/cinc-auditor-4.52.9-1.amazon2.x86_64.rpm
         state: present
-        become: true
+      become: true
