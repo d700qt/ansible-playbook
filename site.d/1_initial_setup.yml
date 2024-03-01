@@ -1,5 +1,6 @@
-roles:
-  - role: ansible-role
+- hosts: all
+  roles:
+    - role: ansible-role
 # Moved to role
 # - hosts: localhost
 #   tasks:
