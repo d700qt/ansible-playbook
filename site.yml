@@ -1,2 +1,3 @@
 ---
 - import_playbook: site.d/playbook1.yml
+- import_playbook: site.d/install-software.yml

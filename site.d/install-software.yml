@@ -1,0 +1,13 @@
+# ---
+# - hosts: localhost
+#   tasks:
+#     - name: get hostname
+#       command: hostname
+#       register: hostname
+
+#     - name: debug
+#       ansible.builtin.debug:
+#         var: hostname
+
+
+# https://downloads.cinc.sh/files/stable/cinc-auditor/4.52.9/amazon/2/cinc-auditor-4.52.9-1.amazon2.x86_64.rpm

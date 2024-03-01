@@ -5,6 +5,8 @@
       command: hostname
       register: hostname
 
-    - name: debug
-      ansible.builtin.debug:
-        var: hostname
+    - name: write_run_ansible_script
+      template:
+        src: run-ansible.sh.j2
+        dest: ~/run-ansible.sh
+        mode: 755
