@@ -1,0 +1,4 @@
+---
+- src: git@ghttps://github.com/d700qt/ansible-role.git
+  name: ansible-role
+  version: master
