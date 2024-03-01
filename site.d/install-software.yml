@@ -10,4 +10,5 @@
       yum:
         name: /tmp/cinc-auditor-4.52.9-1.amazon2.x86_64.rpm
         state: present
+        disable_gpg_check: true  # Disable GPG signature check
       become: true
