@@ -3,12 +3,12 @@
   tasks:
     - name: Download RPM package
       get_url:
-        url: "https://downloads.cinc.sh/files/stable/cinc-auditor/4.52.9/amazon/2/cinc-auditor-4.52.9-1.amazon2.x86_64.rpm"
-        dest: /tmp/cinc-auditor-4.52.9-1.amazon2.x86_64.rpm
+        url: "https://downloads.cinc.sh/files/stable/cinc-auditor/{{ inspec_version }}/amazon/2/cinc-auditor-{{ inspec_version }}-1.amazon2.x86_64.rpm"
+        dest: /tmp/cinc-auditor-{{ inspec_version }}-1.amazon2.x86_64.rpm
 
     - name: Install inspec from RPM
       yum:
-        name: /tmp/cinc-auditor-4.52.9-1.amazon2.x86_64.rpm
+        name: /tmp/cinc-auditor-{{ inspec_version }}-1.amazon2.x86_64.rpm
         state: present
         disable_gpg_check: true  # Disable GPG signature check
       become: true
