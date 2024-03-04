@@ -9,9 +9,9 @@
       msg: "{{ ansible_ssh_host }}"
 
   tasks:
-    - name: Get {{ inspec_exec_profiles.name }} profile
+    - name: Get inspec tests profile
       get_url:
-        url: "{{ inspec_exec_profiles.url }}"
-        dest: "~/inspec/profile/{{ inspec_exec_profiles.url }}.zip"
+        url: "https://github.com/d700qt/inspec-tests/archive/refs/heads/main.zip"
+        dest: "~/inspec/profile/inspec_tests.zip"
         mode: '0660'
         validate_certs: no
