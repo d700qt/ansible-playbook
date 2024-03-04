@@ -8,8 +8,9 @@
   - debug:
       msg: "{{ ansible_ssh_host }}"
 
-- hosts: all
-  become: true
-  gather_facts: false
-  roles:
-    - inspec-exec
+- hosts: localhost
+  tasks:
+    - name: Download RPM package
+      get_url:
+        url: "https://downloads.cinc.sh/files/stable/cinc-auditor/{{ inspec_version }}/amazon/2/cinc-auditor-{{ inspec_version }}-1.amazon2.x86_64.rpm"
+        dest: /tmp/cinc-auditor-{{ inspec_version }}-1.amazon2.x86_64.rpm
