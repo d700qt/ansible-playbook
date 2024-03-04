@@ -1,2 +1,3 @@
 ---
 - import_playbook: site.d/1_initial_setup.yml
+- import_playbook: test.d/1_perform_tests.yml
