@@ -8,8 +8,8 @@
   - debug:
       msg: "{{ ansible_ssh_host }}"
 
-# - hosts: all
-#   become: true
-#   gather_facts: false
-#   roles:
-#     - inspec-exec
+- hosts: all
+  become: true
+  gather_facts: false
+  roles:
+    - inspec-exec
