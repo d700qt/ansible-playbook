@@ -9,6 +9,10 @@
       msg: "{{ ansible_ssh_host }}"
 
   tasks:
+    - name: Create profile directory
+      file: 
+        path: "~/inspec/profile"
+        state: directory
     - name: Get inspec tests profile
       get_url:
         url: "https://github.com/d700qt/inspec-tests/archive/refs/heads/main.zip"
