@@ -23,6 +23,7 @@
       unarchive:
         src: "~/inspec/profile/inspec_tests.zip"
         dest: "~/inspec/profile/inspec_tests"
+        remote_src: yes
       changed_when: False
 
       
