@@ -28,6 +28,6 @@
     - name: Execute inspect tests
       shell: |
         cd ~/inspec
-        inspec exec --insecure --config config.json profile/inspec_tests
+        inspec exec --insecure --config config.json profile/inspec_tests/inspec_tests
 
       
