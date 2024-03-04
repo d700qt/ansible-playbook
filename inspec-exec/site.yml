@@ -25,7 +25,7 @@
         dest: "~/inspec/profile/inspec_tests"
         remote_src: yes
       changed_when: False
-    - name: Execute inspect tests
+    - name: Execute inspec tests
       shell: |
         cd ~/inspec
         inspec exec --insecure --config config.json profile/inspec_tests/inspec-tests-main
