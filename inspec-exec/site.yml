@@ -9,7 +9,7 @@
       msg: "{{ ansible_ssh_host }}"
 
   tasks:
-    - name: Get {{ profile }} profile
+    - name: Get {{ inspec-exec-profiles.name }} profile
       get_url:
         url: "{{ inspec-exec-profiles.url }}"
         dest: "~/inspec/profile/{{ inspec-exec-profiles.url }}.zip"
