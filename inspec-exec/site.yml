@@ -5,8 +5,9 @@
   gather_facts: false
   become_user: root
   pre_tasks:
-    - debug:
+  - debug:
       msg: "{{ ansible_ssh_host }}"
+
   tasks:
     - name: Download RPM package
       get_url:
