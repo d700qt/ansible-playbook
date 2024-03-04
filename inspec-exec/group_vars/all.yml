@@ -1,4 +1,4 @@
-inspec_exec_profiles:
-  - name: "inspec_tests"
-    url:  "https://github.com/d700qt/inspec-tests/archive/refs/heads/main.zip"
+# inspec_exec_profiles:
+#   - name: "inspec_tests"
+#     url:  "https://github.com/d700qt/inspec-tests/archive/refs/heads/main.zip"
 
