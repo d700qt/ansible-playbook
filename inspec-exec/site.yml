@@ -16,13 +16,13 @@
     - name: Get inspec tests profile
       get_url:
         url: "https://github.com/d700qt/inspec-tests/archive/refs/heads/main.zip"
-        dest: "~/inspec/profile/~/inspec/profile.zip"
+        dest: "~/inspec/profile/inspec_tests.zip"
         mode: '0660'
         validate_certs: no
     - name: Extract inspec tests profile
       unarchive:
         src: "~/inspec/profile/inspec_tests.zip"
-        dest: "~/inspec/profile/inspec_tests"
+        dest: "inspec_tests"
         remote_src: yes
       changed_when: False
 
