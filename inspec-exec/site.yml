@@ -29,4 +29,8 @@
       shell: |
         cd ~/inspec
         inspec exec --insecure --config config.json profile/inspec_tests/inspec-tests-main
+      register: inspec_test_output
+    - name: Show inspect test output
+      debug:
+        output: {{ inspec_test_output }}
 
