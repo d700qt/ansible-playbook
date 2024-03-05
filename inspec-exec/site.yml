@@ -32,5 +32,7 @@
       register: inspec_test_output
     - name: Show inspect test output
       debug:
-        var: inspec_test_output
+        msg: |
+          inspect test output:
+          {{ inspec_test_output | to_nice_json }}
 
