@@ -32,5 +32,5 @@
       register: inspec_test_output
     - name: Show inspect test output
       debug:
-        var: {{ inspec_test_output }}
+        var: inspec_test_output
 
