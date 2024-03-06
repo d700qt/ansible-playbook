@@ -1,4 +1,2 @@
 ---
   inspec_exec_directory: ~/inspec
-  inspec_profiles_directory: profiles
-  inspec_tests_url: https://github.com/d700qt/inspec-tests/archive/refs/heads/main.zip
