@@ -3,8 +3,3 @@
   inspec_exec_cmd: inspec exec --insecure
   inspec_profiles_directory: profiles
   inspec_tests_url: https://github.com/d700qt/inspec-tests/archive/refs/heads/main.zip
-
-# inspec_exec_profiles:
-#   - name: "inspec_tests"
-#     url:  "https://github.com/d700qt/inspec-tests/archive/refs/heads/main.zip"
-
