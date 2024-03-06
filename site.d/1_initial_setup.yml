@@ -1,6 +1,9 @@
 - hosts: all
   roles:
     - role: ansible-role
+      # vars:
+      #   inspec_version = {{ inspec_version }}
+
 
 # Moved to role
 # - hosts: localhost
