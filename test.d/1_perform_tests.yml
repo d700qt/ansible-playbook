@@ -1,7 +1,1 @@
----
-- hosts: all
-  tasks:
-    - set_fact:
-        inspec_exec_folder: "{{ inspec_exec_folder }}"
-
 - import_playbook: ../inspec-exec/site.yml

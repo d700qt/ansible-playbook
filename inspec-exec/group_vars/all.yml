@@ -1,3 +1,6 @@
+---
+  inspec_exec_folder: ~/inspec
+
 # inspec_exec_profiles:
 #   - name: "inspec_tests"
 #     url:  "https://github.com/d700qt/inspec-tests/archive/refs/heads/main.zip"
