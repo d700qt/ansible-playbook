@@ -1,2 +1,3 @@
 ---
   inspec_exec_directory: ~/inspec
+  inspec_version: 4.52.9
