@@ -11,7 +11,7 @@
   tasks:
     - name: Create profile directory
       file: 
-        path: "~/inspec/profile/inspec_tests"
+        path: "{{ inspec_exec_folder }}/inspec/profile/inspec_tests"
         state: directory
     - name: Get inspec tests profile
       get_url:
