@@ -16,7 +16,7 @@
     - name: Get inspec tests profile
       get_url:
         url: "{{ inspec_tests_url }}"
-        dest: "~/inspec/profile/inspec_tests.zip"
+        dest: "{{ inspec_exec_directory }}/{{ inspec_profiles_directory }}/inspec_tests.zip"
         mode: '0660'
         validate_certs: no
     - name: Extract inspec tests profile
