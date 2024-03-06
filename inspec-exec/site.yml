@@ -11,11 +11,11 @@
   tasks:
     - name: Create profile directory
       file: 
-        path: "{{ inspec_exec_folder }}/profiles"
+        path: "{{ inspec_exec_directory }}/{{ inspec_profiles_directory }}"
         state: directory
     - name: Get inspec tests profile
       get_url:
-        url: "https://github.com/d700qt/inspec-tests/archive/refs/heads/main.zip"
+        url: "{{ inspec_tests_url }}"
         dest: "~/inspec/profile/inspec_tests.zip"
         mode: '0660'
         validate_certs: no
