@@ -27,8 +27,8 @@
       changed_when: False
     - name: Execute inspec tests
       shell: |
-        cd {{ inspec_exec_directory }}
-        {{ inspec_exec_cmd }} --config config.json {{ inspec_profiles_directory }}/inspec-tests-main
+        cd {{ inspec_exec_directory }}/{{ inspec_profiles_directory }}/inspec-tests-main
+        {{ inspec_exec_cmd }} --config {{ inspec_exec_directory }}/config.json .
       register: inspec_test_output
     - name: Show inspect test output
       debug:
