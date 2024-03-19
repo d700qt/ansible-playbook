@@ -29,7 +29,7 @@
     - name: Execute inspec tests
       shell: |
         cd {{ inspec_exec_directory }}/{{ inspec_profiles_directory }}/inspec-tests-main
-        {{ inspec_exec_cmd }} --config {{ inspec_exec_directory }}/config.json --waiver-file waivers.yml .
+        {{ inspec_exec_cmd }} --config {{ inspec_exec_directory }}/config.json --log-level debug --waiver-file waivers.yml .
       register: inspec_test_output
     - name: Show inspect test output
       debug:
