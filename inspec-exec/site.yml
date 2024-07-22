@@ -30,6 +30,9 @@
     # Example including of vars in a file
     - name: include_test_file_vars
       include_vars: "{{ inspec_exec_directory }}/test_var_file.yml"
+    - name: show_var_file_contents
+      debug:
+        msg: "{{ level1 }}"
 
     - name: Execute inspec tests
       shell: |
