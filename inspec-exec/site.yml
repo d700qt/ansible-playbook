@@ -26,6 +26,11 @@
         dest: "{{ inspec_exec_directory }}/{{ inspec_profiles_directory }}"
         remote_src: yes
       changed_when: False
+
+    # Example including of vars in a file
+    - name: include_test_file_vars
+      include_vars: "{{ inspec_exec_directory }}/test_var_file.yml"
+
     - name: Execute inspec tests
       shell: |
         cd {{ inspec_exec_directory }}/{{ inspec_profiles_directory }}/inspec-tests-main
