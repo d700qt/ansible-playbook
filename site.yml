@@ -1,3 +1,5 @@
 ---
-- import_playbook: site.d/1_initial_setup.yml
-- import_playbook: test.d/1_perform_tests.yml
+- name: Run configuration using ansible role
+  import_playbook: site.d/1_initial_setup.yml
+- name: Run inspec testing
+  import_playbook: test.d/1_perform_tests.yml
