@@ -39,5 +39,6 @@
       debug:
         msg: |
           inspec test output:
-          {{ inspec_test_output | to_nice_json }}
+          {{ inspec_test_output }}
+          {{ inspec_test_output.rc }}
 
