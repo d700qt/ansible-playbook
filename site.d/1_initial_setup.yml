@@ -1,9 +1,17 @@
 - hosts: all
+  vars_prompt:
+    - name: important_value
+      prompt: "important question"
+
   roles:
     - role: ansible-role
       # vars:
       #   inspec_version = {{ inspec_version }}
 
+  tasks:
+    - name: print output from prompt
+      ansible.builtin.debug:
+        msg: "THe value is {{ important_value }}"
 
 # Moved to role
 # - hosts: localhost
