@@ -1,10 +1,10 @@
 - hosts: all
-  vars_prompt:
-    - name: important_value
-      prompt: "important question"
+  # vars_prompt:
+  #   - name: important_value
+  #     prompt: "important question"
 
-  # roles:
-  #   - role: ansible-role
+  roles:
+    - role: ansible-role
       # vars:
       #   inspec_version = {{ inspec_version }}
 
