@@ -8,10 +8,10 @@
       # vars:
       #   inspec_version = {{ inspec_version }}
 
-  tasks:
-    - name: print output from prompt
-      ansible.builtin.debug:
-        msg: "THe value is {{ important_value }}"
+  # tasks:
+  #   - name: print output from prompt
+  #     ansible.builtin.debug:
+  #       msg: "THe value is {{ important_value }}"
 
 # Moved to role
 # - hosts: localhost
